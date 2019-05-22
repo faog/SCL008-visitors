@@ -2,6 +2,7 @@
 
 //importación de los templates constridos
 import {templateSession} from './assets/views/templateSession.js';
+import {templateVisitorRegistration} from './assets/views/templateVisitorRegistration.js';
 
 /*1. Crear una función que reciba el hash (#) y según la coincidencia retorne otra función que va imprimir
 el template en el html*/
@@ -32,7 +33,7 @@ const showTemplate = (hash) =>{
             templateSession();
             break;
         case 'visitorregistration':
-            TemplateVisitorRegistration();
+            templateVisitorRegistration();
             break;
         default:
             containerRoot.innerHTML = `<p>Error 404</p>`
