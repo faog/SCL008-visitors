@@ -1,4 +1,4 @@
-export const TemplateVisitorRegistration = () =>{
+export const templateVisitorRegistration = () =>{
     
     document.getElementById('containervisitors').innerHTML=    
     `
