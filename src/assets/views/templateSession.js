@@ -11,5 +11,6 @@ export const templateSession = () => {
     `
     document.getElementById('visit').addEventListener('click',()=>{
         templateVisitorRegistration();
+        window.location.hash="#/visitor"
     })
 };
