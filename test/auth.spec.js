@@ -1,18 +1,18 @@
 import { validateEmail, /*validateNewCoworker,*/ validateRegistration } from "./../src/assets/js/validate.js";
 
 /*1) Validaciones para validateRegistration()*/
-describe("validateRegistration",()=>{
-    it('deberia retornar false, si el usuario no completa ningun campo solicitado',()=>{
-        expect(validateRegistration("","","","")).toBe(false);
+describe("validateRegistration", () => {
+    it('deberia retornar false, si el usuario no completa ningun campo solicitado', () => {
+        expect(validateRegistration("", "", "", "")).toBe(false);
     })
 
-    it('deberia retornar true, si el usuario ingresa todos los campos',()=>{
-        expect(validateRegistration("Fabiola","Orellana","fabiola.orellana.g@gmail.com","123456789"))
-        .toBe(true);
+    it('deberia retornar true, si el usuario ingresa todos los campos', () => {
+        expect(validateRegistration("Fabiola", "Orellana", "fabiola.orellana.g@gmail.com", "123456789"))
+            .toBe(true);
     })
 
-    it('deberia retornar false, si el usuario no completa correo y telefono',()=>{
-        expect(validateRegistration("Fabiola","Orellana","","")).toBe(false);
+    it('deberia retornar false, si el usuario no completa correo y telefono', () => {
+        expect(validateRegistration("Fabiola", "Orellana", "", "")).toBe(false);
     })
 })
 

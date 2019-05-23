@@ -10,6 +10,7 @@ export const templateAdminOptions = () => {
             PaseNoma'
         </a>
     </nav>
+
     <div class="templateadmin">
         <h2>Bienvenido administrador</h2>
         <p>Elija una opción:</p>
