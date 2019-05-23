@@ -14,7 +14,7 @@ export const templateNewCoworker = () =>{
             <p id="firstnamealert"></p>
             <label>Apellido:</label>                     
             <input type="text" id="coworkerlastname" placeholder="Ingresa apellido"/>
-            <p id=lastnamealert"></p>
+            <p id="lastnamealert"></p>
             <label>Email:</label>  
             <input type="email" id= "coworkeremail" placeholder="Ingresa email"/>
             <p id ="emailalert"></p>
