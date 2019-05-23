@@ -1,4 +1,8 @@
+
+import {getCompanies, visitorCreate } from '../js/datamodel.js'
+
 //Falta aplicar css
+
 export const templateVisitorRegistration = () =>{
     
     document.getElementById('containervisitors').innerHTML=    
@@ -17,18 +21,34 @@ export const templateVisitorRegistration = () =>{
             <label>N° Celular:</label>  
             <input type="text" id="visitorphone" placeholder="Ingresa tu n° celular"/>
             <p id ="phoneerror"></p>
-            <label for="inputstate">Empresa que visita:</label>
-            <select id="inputstate" class="form-control">            
-            <option selected>Selecciona...</option>
-            <option>...</option>
+
+            <label for="company">Empresa que visita:</label>
+            <select id="company" class="form-control">            
+            <option selected>Selecciona una empresa</option> 
             </select>
-            <label for="inputState">Persona que visita:</label>
-            <select id="inputState" class="form-control">
+
+            <label for="companyperson">Persona que visita:</label>
+            <select id="companyperson" class="form-control">
             <option selected>Selecciona...</option>
-            <option>...</option>
             </select>
             <button id="registration">Registrarse</button>        
         </article>            
     </div>
-    `;      
+    `;    
+    
+    getCompanies();
+
+    document.getElementById('registration').addEventListener('click',()=>{
+        let visitorFirstName = document.getElementById('visitorfirstname').value;
+        let visitorLastName = document.getElementById('visitorlastname').value;
+        let visitorEmail = document.getElementById('visitoremail').value;
+        let visitorPhone = document.getElementById('visitorphone').value;
+        let company = document.getElementById('company');
+        let companyName = company.options[company.selectedIndex].text;
+        let companyPerson = document.getElementById('companyperson').value;
+
+        visitorCreate(visitorFirstName, visitorLastName, visitorEmail, visitorPhone, companyName, companyPerson);
+    })
+
+    
 }
