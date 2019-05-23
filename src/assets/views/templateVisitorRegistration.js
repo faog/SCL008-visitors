@@ -1,4 +1,4 @@
-import {postCompany} from '../js/datamodel.js'
+import { getCompanies} from '../js/datamodel.js'
 
 export const templateVisitorRegistration = () =>{
     
@@ -27,12 +27,11 @@ export const templateVisitorRegistration = () =>{
             <label for="companyperson">Persona que visita:</label>
             <select id="companyperson" class="form-control">
             <option selected>Selecciona...</option>
-            <option>...</option>
             </select>
             <button id="registration">Registrarse</button>        
         </article>            
     </div>
     `;    
     
-    postCompany();
+    getCompanies();
 }
