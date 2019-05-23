@@ -1,9 +1,8 @@
-import {templateNewCoworker} from './templateNewCoworker.js';
-
 export const templateAdminOptions = () => {
 
     document.getElementById('containervisitors').innerHTML =
-    `<nav class="navbar">
+    `
+    <nav class="navbar">
      <a class="navbar-brand" href="#">
      <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="">
      PaseNoma'
@@ -16,8 +15,5 @@ export const templateAdminOptions = () => {
     </div>
     `;
 
-    document.getElementById('newregister').addEventListener('click',()=>{
-        templateNewCoworker();
-        window.location.hash="#/newregister"
-    })
+
 };
