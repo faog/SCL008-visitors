@@ -61,14 +61,9 @@ export const visitorCreate = (visitorFirstName, visitorLastName, visitorEmail, v
         .then(function(docRef) {
             console.log("Document written with ID: ", docRef.id);
             alert('Visita Ingresada');
-
+            cleanViewVisitors();
             window.location.hash="#/visitor";
-            document.getElementById('visitorfirstname').value='';
-            document.getElementById('visitorlastname').value='';
-            document.getElementById('visitoremail').value='';
-            document.getElementById('visitorphone').value='';
-            document.getElementById('company').value='Selecciona una empresa';
-            document.getElementById('companyperson').value='Selecciona...';
+
         })
         .catch(function(error) {
             console.error("Error adding document: ", error);
@@ -78,4 +73,11 @@ export const visitorCreate = (visitorFirstName, visitorLastName, visitorEmail, v
     }
 }
 
-
+export const cleanViewVisitors = (visitorFirstName, visitorLastName, visitorEmail, visitorPhone, companyName, companyPerson) =>{
+    document.getElementById('visitorfirstname').value='';
+    document.getElementById('visitorlastname').value='';
+    document.getElementById('visitoremail').value='';
+    document.getElementById('visitorphone').value='';
+    document.getElementById('company').value='Selecciona una empresa';
+    document.getElementById('companyperson').value='Selecciona...';
+}
