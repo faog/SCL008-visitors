@@ -11,6 +11,7 @@ export const templateSession = () => {
       </a>
      </nav>
     <div class="templatesession">
+        <h2>Selecciona tu perfil</h2>
         <button  id="administration">Administador</button>   
         <button  id="visit">Visitante</button>               
     </div>
