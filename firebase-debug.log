@@ -1,55 +1,29 @@
-[debug] [2019-05-22T21:59:51.901Z] ----------------------------------------------------------------------
-[debug] [2019-05-22T21:59:51.913Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Fabiola\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-05-22T21:59:51.914Z] CLI Version:   6.8.0
-[debug] [2019-05-22T21:59:51.914Z] Platform:      win32
-[debug] [2019-05-22T21:59:51.914Z] Node Version:  v11.8.0
-[debug] [2019-05-22T21:59:51.920Z] Time:          Wed May 22 2019 17:59:51 GMT-0400 (GMT-04:00)
-[debug] [2019-05-22T21:59:51.920Z] ----------------------------------------------------------------------
+[debug] [2019-05-23T00:20:04.562Z] ----------------------------------------------------------------------
+[debug] [2019-05-23T00:20:04.567Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-05-23T00:20:04.567Z] CLI Version:   6.8.0
+[debug] [2019-05-23T00:20:04.567Z] Platform:      darwin
+[debug] [2019-05-23T00:20:04.567Z] Node Version:  v11.8.0
+[debug] [2019-05-23T00:20:04.569Z] Time:          Wed May 22 2019 19:20:04 GMT-0500 (GMT-05:00)
+[debug] [2019-05-23T00:20:04.569Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-05-22T21:59:51.970Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-05-22T21:59:51.974Z] > authorizing via signed-in user
-[debug] [2019-05-22T21:59:51.975Z] [iam] checking project visitors-hackathon for permissions ["firebase.projects.get"]
-[debug] [2019-05-22T21:59:51.985Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon:testIamPermissions  
-
-[debug] [2019-05-22T21:59:53.296Z] <<< HTTP RESPONSE 200
-[debug] [2019-05-22T21:59:53.303Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon  
- 
-[debug] [2019-05-22T21:59:54.410Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\Fabiola\Desktop\HK\SCL008-visitors'...
-[info] 
-[debug] [2019-05-22T21:59:54.421Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/83010117216/clients/_:getWebAppConfig  
- 
-[debug] [2019-05-22T21:59:54.853Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: src
-[info] +  hosting: Local server: http://localhost:5000
-[debug] [2019-05-22T22:12:36.652Z] ----------------------------------------------------------------------
-[debug] [2019-05-22T22:12:36.661Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Fabiola\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-05-22T22:12:36.663Z] CLI Version:   6.8.0
-[debug] [2019-05-22T22:12:36.663Z] Platform:      win32
-[debug] [2019-05-22T22:12:36.663Z] Node Version:  v11.8.0
-[debug] [2019-05-22T22:12:36.667Z] Time:          Wed May 22 2019 18:12:36 GMT-0400 (GMT-04:00)
-[debug] [2019-05-22T22:12:36.667Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-05-22T22:12:36.705Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-05-22T22:12:36.707Z] > authorizing via signed-in user
-[debug] [2019-05-22T22:12:36.708Z] [iam] checking project visitors-hackathon for permissions ["firebase.projects.get"]
-[debug] [2019-05-22T22:12:36.716Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-05-22T22:12:36.717Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2019-05-23T00:20:04.668Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-23T00:20:04.669Z] > authorizing via signed-in user
+[debug] [2019-05-23T00:20:04.669Z] [iam] checking project visitors-hackathon for permissions ["firebase.projects.get"]
+[debug] [2019-05-23T00:20:04.672Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-05-23T00:20:04.672Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2019-05-22T22:12:36.982Z] <<< HTTP RESPONSE 200
-[debug] [2019-05-22T22:12:37.000Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon:testIamPermissions  
+[debug] [2019-05-23T00:20:04.958Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-23T00:20:05.074Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon:testIamPermissions  
 
-[debug] [2019-05-22T22:12:38.130Z] <<< HTTP RESPONSE 200
-[debug] [2019-05-22T22:12:38.134Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon  
+[debug] [2019-05-23T00:20:06.487Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-23T00:20:06.489Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon  
  
-[debug] [2019-05-22T22:12:39.222Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-23T00:20:07.758Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'C:\Users\Fabiola\Desktop\HK\SCL008-visitors'...
+[info] === Serving from '/Users/TaphieM/Desktop/Laboratoria/Hackhaton_Visitor/SCL008-visitors'...
 [info] 
-[debug] [2019-05-22T22:12:39.232Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/83010117216/clients/_:getWebAppConfig  
+[debug] [2019-05-23T00:20:07.798Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/83010117216/clients/_:getWebAppConfig  
  
-[debug] [2019-05-22T22:12:39.626Z] <<< HTTP RESPONSE 200
-[warn] !  hosting: Port 5000 is not available. Trying another port...
+[debug] [2019-05-23T00:20:08.367Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: src
-[info] +  hosting: Local server: http://localhost:5005
+[info] ✔  hosting: Local server: http://localhost:5000
