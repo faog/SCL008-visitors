@@ -1,3 +1,5 @@
+import {postCompany} from '../js/datamodel.js'
+
 export const templateVisitorRegistration = () =>{
     
     document.getElementById('containervisitors').innerHTML=    
@@ -16,18 +18,21 @@ export const templateVisitorRegistration = () =>{
             <label>N° Celular:</label>  
             <input type="text" id="visitorphone" placeholder="Ingresa tu n° celular"/>
             <p id ="phoneerror"></p>
-            <label for="inputstate">Empresa que visita:</label>
-            <select id="inputstate" class="form-control">            
-            <option selected>Selecciona...</option>
-            <option>...</option>
+
+            <label for="company">Empresa que visita:</label>
+            <select id="company" class="form-control">            
+            <option selected>Selecciona una empresa</option> 
             </select>
-            <label for="inputState">Persona que visita:</label>
-            <select id="inputState" class="form-control">
+
+            <label for="companyperson">Persona que visita:</label>
+            <select id="companyperson" class="form-control">
             <option selected>Selecciona...</option>
             <option>...</option>
             </select>
             <button id="registration">Registrarse</button>        
         </article>            
     </div>
-    `;      
+    `;    
+    
+    postCompany();
 }
