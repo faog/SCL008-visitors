@@ -1,39 +1,23 @@
-# Registro de Visitantes
+# Proyecto PaseNoma'
 
 ## Preámbulo
 
-El registro de visitantes en una empresa en América Latina es un proceso tedioso
-y manual. Lo común es que una persona esté en la recepción tomando nota - a
-veces con papel y lápiz - de cada visitante. Por razones de seguridad,
-usualmente piden a cada visitante dejar una identificación. Si vivimos en la era
-digital, ¿por qué seguimos registrando visitantes como si fuera 1985? ¿Qué tal
-si sustituimos a la persona en recepción por una tablet? ¿Qué tal si en lugar de
-pedir una identificación, tomamos una foto?
+Seguramente te ha ocurrido que vas con el tiempo justo para llegar a una cita de trabajo pero oh sorpresa! justo cuando creias lograrlo te encuentras con el ultimo obstaculo: registrarse para poder entrar D:! , ves una fila de personas formadas para el registro y de repente quisieras que la recepcionista fuera una máquina super rápida que aparte escribiera tu nombre y correo de la forma correcta sin tanto, me lo repites? PaseNoma' es una aplicación para tablets que facilitará tu registro y lo guardará de manera eficiente, no solo será una ventaja para el ti sino también para la recepcionista que no es una máquina pero que obvio puede usar una para eficientar su trabajo. 
+
 
 ## Introducción
 
-En este proyecto una empresa de coworking en tu ciudad ha
-decidido contratarte a ti y a otra compañera para reinventar su proceso de
-registro de visitantes. Con la entrada de [WeWork](https://www.wework.com/es-ES/l/santiago-de-chile)
+ [WeWork](https://www.wework.com/es-ES/l/santiago-de-chile)
 al mercado latinoamericano, tienen mucha más competencia y necesitan invertir en
 tecnología para mejorar su servicio; el registro de visitantes es un primer
 acercamiento. Te dan la referencia de [Envoy](https://envoy.com/) en EEUU (un
 servicio que ofrece un sistema digital de registro de visitantes) y ustedes
 tienen que desarrollar una versión mínima viable (ver anexo I abajo).
 
-## Objetivos de aprendizaje
-
-El objetivo principal de este proyecto es que pongas en práctica todo lo
-aprendido hasta ahora, con foco en la calidad, trabajando en duplas y presentando un demo con tu solución.
-
-## Consideraciones generales
-
-Para completar este proyecto deberás trabajar en un equipo de dos y seguir las
-siguientes consideraciones:
 
 ### 1. Planificación y organización
 
-Planificación inicial
+Explicar nuestra planificación poner fotos de trello
 
 Es muy importante que al dividirse/distribuir/repartir el trabajo, lo hagan
 pensando de manera ágil y no en cascada. Es decir, si una de ustedes está
@@ -132,19 +116,6 @@ Features/características extra sugeridas:
 * También sería ideal poder registrar la firma del visitante en el registro.
 * Sería genial también permitir generar un "pase" para el visitante, así
   fácilmente a la vista se sabe quién está de visita.
-
-## Horario
-
-|       |  Lunes               | Martes                       | Miércoles                     | Jueves                                | Viernes                                |
-|------ | ---------------------| ---------------------------- | ----------------------------- | ------------------------------------- |----------------------------------------
-| 8:00  |                      |                              |                               | Hackeo                                | Hackeo
-| 13:30 |                      |                              | Kick Off Hackathon            |                                       | Detalles finales
-| 14:00 |                      |                              | Sesión planificación          |                                       | 
-| 15:00 |                      |                              | Hackeo                        |                                       | 
-| 16:00 |                      |                              |                               |                                       | 
-| 17:00 |                      |                              |                               | Inscripción APP's                     | Presentaciones
-| 18:00 |                      |                              |                               |                                       | Deliberación del jurado
-| 20:00 |                      |                              |                               | Cierre inscripciones                  |
 
 
 ## Anexo: Construyendo un MVP

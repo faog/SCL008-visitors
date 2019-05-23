@@ -7,14 +7,14 @@ export const templateNewCoworker = () =>{
         PaseNoma'
       </a>
      </nav>
-    <div class="templatevisitors">
+     <div class="templatevisitors">
         <article id="visitorinfo">   
             <label>Nombre:</label>                     
             <input type="text" id="coworkerfirstname" placeholder="Ingresa nombre"/>
             <p id="firstnamealert"></p>
             <label>Apellido:</label>                     
             <input type="text" id="coworkerlastname" placeholder="Ingresa apellido"/>
-            <p id=lastnamealert"></p>
+            <p id="lastnamealert"></p>
             <label>Email:</label>  
             <input type="email" id= "coworkeremail" placeholder="Ingresa email"/>
             <p id ="emailalert"></p>
@@ -27,6 +27,5 @@ export const templateNewCoworker = () =>{
             <option>...</option>  
             <button id="add">Agregar</button>        
         </article>            
-    </div>
-    `;
+    </div>`
 }
