@@ -1,3 +1,4 @@
+//Falta aplicar css
 export const templateVisitorRegistration = () =>{
     
     document.getElementById('containervisitors').innerHTML=    
