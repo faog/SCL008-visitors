@@ -9,7 +9,7 @@ export const templateAdminOptions = () => {
      PaseNoma'
      </a>
     </nav>
-    <div class="templateadmin">
+    <div id ="adminmenu">
         <button id="newregister">Nuevo Registro</button>   
         <button id="visitorsrecord">Historial de Visitantes</button>   
         <button id="statistics">Estadisticas</button>             
