@@ -28,5 +28,5 @@ export const templateNewCoworker = () =>{
             <button id="add">Agregar</button>        
         </article>            
     </div>
-    `;      
+    `;
 }
