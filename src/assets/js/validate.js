@@ -7,7 +7,7 @@ export const validateRegistration = (visitorFirstName,visitorLastName,visitorEma
     }
 }
 
-/** */
+/*
 export const validateInput = (fullName, email, visitCompany, whoVisit) => {
     if (fullName === "" || email === "" || visitCompany === "" || whoVisit === "") {
         return false;
@@ -15,7 +15,7 @@ export const validateInput = (fullName, email, visitCompany, whoVisit) => {
         return true;
     }
 };
-
+*/
 export const validateEmail = (visitorEmail) => {
     //expresión regular que simula el patrón del correo electrónico
     let pattern = /\S+@\S+\.\S+/;
@@ -28,8 +28,8 @@ export const validatePhone = (visitorPhone) => {
     let pattern = [0-9];
     return pattern.test(visitorPhone);
 };
-
-/**/
+*/
+/*
 export const validateNewCoworker = (companyName) => {
     if (companyName === "") {
         return false;
@@ -37,3 +37,4 @@ export const validateNewCoworker = (companyName) => {
         return true;
     }
 };
+*/
