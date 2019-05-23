@@ -1,6 +1,8 @@
 *{
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    margin: 0px auto;
+    padding: 0px auto;
 }
 
 .templatesession h2{
@@ -18,6 +20,7 @@
     color:#DDDBF1;
     font-family: 'Lato', sans-serif;
     font-size: 40px;
+    margin-left: 0px;
 }
 
 .navbar img {
@@ -38,31 +41,44 @@
 }
 
 .templatevisitors{
-    border-style: solid;
-    width: 400px;
-    margin-left: 180px;
-    margin-top: 50px;
-
-}
-#visitorinfo label{
-    margin-left: 10px;
+    width: 80%;    
+    margin-top: 70px;
+    font-size: 25px;
 }
 
+.templatevisitors input{
+    text-align: left;
+    height: 60px;
+    font-size: 20px;
+}
+
+.templatevisitors h5{
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.templatevisitors p {
+    font-style: oblique;
+    font-size: 20px;
+    text-align: left;
+}
 
 #visitorinfo select{
-    margin-left: 10px;
-    width: 300px;
+    margin-bottom: 15px;
+    text-align: center;
+    height: 60px;
+    font-size: 20px;
 }
 
 #registration {
     border-radius: 15px;
     background-color: #48284A;
-    height: 40px;
-    font-size: 16px; 
+    height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
     border: none;
-    margin-top: 40px;
-    margin-left: 150px;
-    margin-bottom: 10px;    
-    color: #DDDBF1
-
+    margin-top: 40px;    
+    margin-bottom: 10px;
+    color: #DDDBF1;
 }
