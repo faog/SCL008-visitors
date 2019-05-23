@@ -1,7 +1,7 @@
-export const templateNewCoworker = () =>{
-    
-    document.getElementById('containervisitors').innerHTML=    
-    `
+export const templateNewCoworker = () => {
+
+    document.getElementById('containervisitors').innerHTML =
+        `
     <div class="templatevisitors">
         <article id="visitorinfo">   
             <label>Nombre:</label>                     
@@ -23,5 +23,5 @@ export const templateNewCoworker = () =>{
             <button id="add">Agregar</button>        
         </article>            
     </div>
-    `;      
+    `;
 }
