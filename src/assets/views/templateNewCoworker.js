@@ -6,12 +6,12 @@ export const templateNewCoworker = () => {
         <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="">
         PaseNoma'
       </a>
-      <li>
+        <li>
 
-    <a id="newregister">Nuevo Registro</a>
-    <a id="visitorsrecord">Historial de Visitantes</a>
-    <a id="statistics">Estadisticas</a>
-</li>
+            <a id="newregister">Nuevo Registro</a>
+            <a id="visitorsrecord">Historial de Visitantes</a>
+            <a id="statistics">Estadisticas</a>
+        </li>
      </nav>
      <div class="templatevisitors">
         <article id="visitorinfo">   

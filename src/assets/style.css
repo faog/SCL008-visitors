@@ -28,8 +28,7 @@
     width: 60px;
 }
 
-#administration,
-#visit {
+#administration,#visit {
     border-radius: 15px;
     background-color: #3C4F76;
     height: 100px;
@@ -84,21 +83,34 @@
     color: #DDDBF1;
 }
 
-#newregister,
-#visitorsrecord,
-#statistics {
+#newregister,#visitorsrecord,#statistics {
     border-radius: 15px;
-    background-color: #48284A;
+    background-color:  #3C4F76;
     height: 90px;
     font-size: 24px;
     font-weight: bold;
     width: 50%;
     border: none;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 10px;
     color: #DDDBF1;
 }
 
 #adminmenu {
     margin-top: 100px;
+}
+
+.templateadmin{
+    margin-top: 150px;
+}
+
+.templateadmin h2 {
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+}
+
+.templateadmin p {
+    margin-bottom: 40px;
+    font-size: 28px;
 }
