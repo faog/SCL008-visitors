@@ -1,4 +1,4 @@
-import {templateVisitor} from './templateVisitor.js';
+import {templateVisitorRegistration} from './templateVisitorRegistration.js';
 
 export const templateSession = () => {
 
@@ -10,6 +10,6 @@ export const templateSession = () => {
     </div>
     `
     document.getElementById('visit').addEventListener('click',()=>{
-        templateVisitor();
+        templateVisitorRegistration();
     })
 };
