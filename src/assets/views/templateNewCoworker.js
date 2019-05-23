@@ -1,32 +1,35 @@
-export const templateNewCoworker = () =>{
-    
-    document.getElementById('containervisitors').innerHTML=    
-    `<nav class="navbar">
+export const templateNewCoworker = () => {
+
+    document.getElementById('containervisitors').innerHTML =
+        `<nav class="navbar">
       <a class="navbar-brand" href="#">
         <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="">
         PaseNoma'
       </a>
+      <li>
+
+    <a id="newregister">Nuevo Registro</a>
+    <a id="visitorsrecord">Historial de Visitantes</a>
+    <a id="statistics">Estadisticas</a>
+</li>
      </nav>
     <div class="templatevisitors">
         <article id="visitorinfo">   
-            <label>Nombre:</label>                     
-            <input type="text" id="coworkerfirstname" placeholder="Ingresa nombre"/>
+            <input type="text" id="coworkerfirstname" class="form-control" placeholder="Ingresa nombre"/>
             <p id="firstnamealert"></p>
-            <label>Apellido:</label>                     
-            <input type="text" id="coworkerlastname" placeholder="Ingresa apellido"/>
+            <input type="text" id="coworkerlastname"class="form-control"  placeholder="Ingresa apellido"/>
             <p id="lastnamealert"></p>
-            <label>Email:</label>  
-            <input type="email" id= "coworkeremail" placeholder="Ingresa email"/>
+            <input type="email" id= "coworkeremail" class="form-control" placeholder="Ingresa email"/>
             <p id ="emailalert"></p>
-            <label>N° Celular:</label>  
-            <input type="text" id="coworkerphone" placeholder="Ingresa n°de celular"/>
+            <input type="text" id="coworkerphone" class="form-control" placeholder="Ingresa n°de celular"/>
             <p id ="phonealert"></p>
-            <label for="inputstate">Empresa:</label>
             <select id="inputstate" class="form-control">            
             <option selected>Selecciona...</option>
-            <option>...</option>  
-            <button id="add">Agregar</button>        
-        </article>            
+            <option>compañia 1</option>  
+            <option>compañia 2</option>
+            <option>compañia 3</option> 
+            <button id="registration">Registrarse</button>  
+        </article> 
     </div>
     `;
 }
