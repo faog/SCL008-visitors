@@ -6,7 +6,12 @@ import {validateEmail} from '../js/validate.js';
 export const templateVisitorRegistration = () =>{
     
     document.getElementById('containervisitors').innerHTML=    
-    `
+    `<nav class="navbar">
+      <a class="navbar-brand" href="#">
+       <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        PaseNoma'
+      </a>
+    </nav>
     <div class="templatevisitors">
         <article id="visitorinfo">   
             <label>Nombre:</label>                     
