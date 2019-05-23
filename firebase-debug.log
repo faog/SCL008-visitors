@@ -23,3 +23,32 @@
 [debug] [2019-05-23T00:35:21.376Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: src
 [info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-05-23T01:34:48.431Z] ----------------------------------------------------------------------
+[debug] [2019-05-23T01:34:48.434Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2019-05-23T01:34:48.434Z] CLI Version:   6.8.0
+[debug] [2019-05-23T01:34:48.434Z] Platform:      linux
+[debug] [2019-05-23T01:34:48.435Z] Node Version:  v11.8.0
+[debug] [2019-05-23T01:34:48.435Z] Time:          Wed May 22 2019 21:34:48 GMT-0400 (GMT-04:00)
+[debug] [2019-05-23T01:34:48.435Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-23T01:34:48.444Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-23T01:34:48.445Z] > authorizing via signed-in user
+[debug] [2019-05-23T01:34:48.445Z] [iam] checking project visitors-hackathon for permissions ["firebase.projects.get"]
+[debug] [2019-05-23T01:34:48.447Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-05-23T01:34:48.447Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-05-23T01:34:48.749Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-23T01:34:48.758Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon:testIamPermissions  
+
+[debug] [2019-05-23T01:34:49.932Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-23T01:34:49.934Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon  
+ 
+[debug] [2019-05-23T01:34:51.036Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/laboratoriad106/Escritorio/SCL008-visitors'...
+[info] 
+[debug] [2019-05-23T01:34:51.043Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/83010117216/clients/_:getWebAppConfig  
+ 
+[debug] [2019-05-23T01:34:51.945Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5000
