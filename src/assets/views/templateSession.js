@@ -26,4 +26,5 @@ export const templateSession = () => {
         templateAdminOptions();
         window.location.hash="#/administration"
     })
+    
 };
