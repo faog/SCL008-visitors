@@ -13,7 +13,7 @@ export const templateNewCoworker = () => {
     <a id="statistics">Estadisticas</a>
 </li>
      </nav>
-    <div class="templatevisitors">
+     <div class="templatevisitors">
         <article id="visitorinfo">   
             <input type="text" id="coworkerfirstname" class="form-control" placeholder="Ingresa nombre"/>
             <p id="firstnamealert"></p>
@@ -25,6 +25,7 @@ export const templateNewCoworker = () => {
             <p id ="phonealert"></p>
             <select id="inputstate" class="form-control">            
             <option selected>Selecciona...</option>
+
             <option>compañia 1</option>  
             <option>compañia 2</option>
             <option>compañia 3</option> 
@@ -32,4 +33,5 @@ export const templateNewCoworker = () => {
         </article> 
     </div>
     `;
+
 }
