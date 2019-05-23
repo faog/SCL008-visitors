@@ -1,4 +1,7 @@
+
 import {getCompanies, visitorCreate } from '../js/datamodel.js'
+
+//Falta aplicar css
 
 export const templateVisitorRegistration = () =>{
     
