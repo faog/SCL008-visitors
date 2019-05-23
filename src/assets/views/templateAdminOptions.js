@@ -1,3 +1,6 @@
+    
+import { templateNewCoworker } from './templateNewCoworker.js';
+
 export const templateAdminOptions = () => {
 
     document.getElementById('containervisitors').innerHTML =
@@ -14,6 +17,11 @@ export const templateAdminOptions = () => {
         <button id="statistics">Estadisticas</button>             
     </div>
     `;
+
+    document.getElementById('newregister').addEventListener('click', () => {
+        templateNewCoworker();
+        window.location.hash = "#/newregister"
+    })
 
 
 };
