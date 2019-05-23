@@ -13,28 +13,24 @@ export const templateVisitorRegistration = () =>{
       </a>
     </nav>
     <div class="templatevisitors">
+        <h3>Registro de visitantes</h3>
+        <h6>Por favor, complete el siguiente formulario:</h6>
         <article id="visitorinfo">   
-            <label>Nombre:</label>                     
-            <input type="text" id="visitorfirstname" placeholder="Ingresa tu nombre"/>
-            <p id="firstnameerror"></p>
-            <label>Apellido:</label>                     
-            <input type="text" id="visitorlastname" placeholder="Ingresa tu apellido"/>
-            <p id="lastnameerror"></p>
-            <label>Email:</label>  
-            <input type="email" id= "visitoremail" placeholder="Ingresa tu email"/>
-            <p id ="emailerror"></p>
-            <label>N° Celular:</label>  
-            <input type="text" id="visitorphone" placeholder="Ingresa tu n° celular"/>
+            <input type="text" id="visitorfirstname" class="form-control" placeholder="Nombre"/>
+            <p id="firstnameerror"></p>                                 
+            <input type="text" id="visitorlastname" class="form-control" placeholder="Apellidos"/>
+            <p id="lastnameerror"></p>             
+            <input type="email" id= "visitoremail" class="form-control" placeholder="Correo electrónico"/>
+            <p id ="emailerror"></p>              
+            <input type="text" id="visitorphone" class="form-control" placeholder="Número celular"/>
             <p id ="phoneerror"></p>
 
-            <label for="company">Empresa que visita:</label>
             <select id="company" class="form-control">            
-                <option selected>Selecciona una empresa</option> 
+                <option selected>Seleccione la empresa que visita</option> 
             </select>
-
-            <label for="companyperson">Persona que visita:</label>
+            
             <select id="companyperson" class="form-control">
-                <option selected>Selecciona...</option>
+                <option selected>Seleccione la persona que visita</option>
             </select>
             <button id="registration">Registrarse</button>        
         </article>            
