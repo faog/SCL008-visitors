@@ -32,7 +32,7 @@ const showTemplate = (hash) =>{
         case '':
             templateSession();
             break;
-        case 'visitorregistration':
+        case 'visitor':
             templateVisitorRegistration();
             break;
         default:
