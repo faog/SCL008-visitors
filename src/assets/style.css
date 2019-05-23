@@ -1,9 +1,15 @@
 *{
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    margin: 0px auto;
+    padding: 0px auto;
 }
-@media (max-width: 768px){
 
+.templatesession h2{
+    margin-top: 200px;
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+}
 
 .navbar  {
     background-color:#48284A;
@@ -14,6 +20,7 @@
     color:#DDDBF1;
     font-family: 'Lato', sans-serif;
     font-size: 40px;
+    margin-left: 0px;
 }
 
 .navbar img {
@@ -23,59 +30,55 @@
 
 #administration, #visit {
     border-radius: 15px;
-	background-color: #3C4F76	;
-	height: 100px;
-	width: 250px;
-	font-size: 32px; 
-	border: none;
-    margin-top: 300px;
-	color: #DDDBF1
+    background-color: #3C4F76;
+    height: 100px;
+    width: 250px;
+    font-size: 32px; 
+    font-weight: bold;
+    border: none;
+    margin-top: 100px;        
+    color: #DDDBF1
 }
 
 .templatevisitors{
-    width: 400px;
-    margin-left: 180px;
+    width: 80%;    
     margin-top: 70px;
     font-size: 25px;
-
 }
 
 .templatevisitors input{
     text-align: left;
     height: 60px;
     font-size: 20px;
-
 }
 
 .templatevisitors h5{
     margin-bottom: 40px;
-
+    font-size: 28px;
 }
 
 .templatevisitors p {
     font-style: oblique;
     font-size: 20px;
     text-align: left;
-
 }
 
 #visitorinfo select{
     margin-bottom: 15px;
     text-align: center;
     height: 60px;
+    font-size: 20px;
 }
 
 #registration {
     border-radius: 15px;
-	background-color: #48284A	;
+    background-color: #48284A;
     height: 80px;
-    width: 200px;
-	font-size: 25px; 
-	border: none;
-    margin-top: 20px;
-    margin-bottom: 10px;    
-	color: #DDDBF1
-
-}
-
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
+    border: none;
+    margin-top: 40px;    
+    margin-bottom: 10px;
+    color: #DDDBF1;
 }
