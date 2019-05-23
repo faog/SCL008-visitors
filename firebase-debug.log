@@ -53,3 +53,32 @@
 [warn] !  hosting: Port 5000 is not available. Trying another port...
 [info] i  hosting: Serving hosting files from: src
 [info] +  hosting: Local server: http://localhost:5005
+[debug] [2019-05-23T00:10:08.683Z] ----------------------------------------------------------------------
+[debug] [2019-05-23T00:10:08.689Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Fabiola\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-05-23T00:10:08.689Z] CLI Version:   6.8.0
+[debug] [2019-05-23T00:10:08.689Z] Platform:      win32
+[debug] [2019-05-23T00:10:08.690Z] Node Version:  v11.8.0
+[debug] [2019-05-23T00:10:08.692Z] Time:          Wed May 22 2019 20:10:08 GMT-0400 (GMT-04:00)
+[debug] [2019-05-23T00:10:08.693Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-23T00:10:08.728Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-23T00:10:08.730Z] > authorizing via signed-in user
+[debug] [2019-05-23T00:10:08.731Z] [iam] checking project visitors-hackathon for permissions ["firebase.projects.get"]
+[debug] [2019-05-23T00:10:08.736Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-05-23T00:10:08.737Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-05-23T00:10:08.983Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-23T00:10:08.996Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon:testIamPermissions  
+
+[debug] [2019-05-23T00:10:10.133Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-23T00:10:10.138Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon  
+ 
+[debug] [2019-05-23T00:10:11.322Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Fabiola\Desktop\HK\SCL008-visitors'...
+[info] 
+[debug] [2019-05-23T00:10:11.330Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/83010117216/clients/_:getWebAppConfig  
+ 
+[debug] [2019-05-23T00:10:11.832Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] +  hosting: Local server: http://localhost:5000
