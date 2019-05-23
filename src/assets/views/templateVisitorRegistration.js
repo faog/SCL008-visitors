@@ -1,6 +1,6 @@
 
-import {getCompanies, visitorCreate } from '../js/datamodel.js'
-
+import {getCompanies, visitorCreate } from '../js/datamodel.js';
+import {validateEmail} from '../js/validate.js';
 //Falta aplicar css
 
 export const templateVisitorRegistration = () =>{
@@ -14,7 +14,7 @@ export const templateVisitorRegistration = () =>{
             <p id="firstnameerror"></p>
             <label>Apellido:</label>                     
             <input type="text" id="visitorlastname" placeholder="Ingresa tu apellido"/>
-            <p id=lastnameerror"></p>
+            <p id="lastnameerror"></p>
             <label>Email:</label>  
             <input type="email" id= "visitoremail" placeholder="Ingresa tu email"/>
             <p id ="emailerror"></p>
@@ -24,12 +24,12 @@ export const templateVisitorRegistration = () =>{
 
             <label for="company">Empresa que visita:</label>
             <select id="company" class="form-control">            
-            <option selected>Selecciona una empresa</option> 
+                <option selected>Selecciona una empresa</option> 
             </select>
 
             <label for="companyperson">Persona que visita:</label>
             <select id="companyperson" class="form-control">
-            <option selected>Selecciona...</option>
+                <option selected>Selecciona...</option>
             </select>
             <button id="registration">Registrarse</button>        
         </article>            
@@ -47,8 +47,34 @@ export const templateVisitorRegistration = () =>{
         let companyName = company.options[company.selectedIndex].text;
         let companyPerson = document.getElementById('companyperson').value;
 
+    /*IMPRESION VÁLIDACIONES EN EL DOM*/
+    if (visitorFirstName===""){
+        document.getElementById('firstnameerror').innerHTML=`*Debes ingresar un nombre.`;      
+    }else{
+        document.getElementById('firstnameerror').innerHTML='';
+    }
+    
+    if (visitorLastName===""){
+        document.getElementById('lastnameerror').innerHTML=`*Debes ingresar un apellido.`;
+    }else{
+        document.getElementById('lastnameerror').innerHTML='';
+    } 
+    
+    if(visitorEmail==="" || !validateEmail(visitorEmail)){
+        document.getElementById('emailerror').innerHTML=`*Debes ingresar un correo válido.`;
+    }else{
+        document.getElementById('emailerror').innerHTML='';
+    }  
+
+    if(visitorPhone==="" || visitorPhone.length<9 || visitorPhone.length>9){
+        document.getElementById('phoneerror').innerHTML=`*Debes ingresar un número de telefono.`;
+    }else{
+        document.getElementById('phoneerror').innerHTML='';
+    }  
+
         visitorCreate(visitorFirstName, visitorLastName, visitorEmail, visitorPhone, companyName, companyPerson);
     })
 
     
+
 }
