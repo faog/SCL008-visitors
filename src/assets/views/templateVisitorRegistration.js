@@ -1,7 +1,7 @@
 
 import {getCompanies, visitorCreate } from '../js/datamodel.js';
 import {validateEmail} from '../js/validate.js';
-//Falta aplicar css
+
 
 export const templateVisitorRegistration = () =>{
     
