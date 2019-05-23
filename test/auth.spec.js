@@ -1,4 +1,4 @@
-import { validateInput, validateEmail, validateNewCoworker, validateRegistration } from "./../src/assets/js/validate.js";
+import { validateEmail, /*validateNewCoworker,*/ validateRegistration } from "./../src/assets/js/validate.js";
 
 /*1) Validaciones para validateRegistration()*/
 describe("validateRegistration",()=>{
