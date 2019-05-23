@@ -1,12 +1,15 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 .navbar  {
     background-color:#48284A;
 }
 
 .navbar a {
     color:#DDDBF1;
+    font-family: 'Lato', sans-serif;
 }
-
-
 
 #administration, #visit {
     border-radius: 15px;
