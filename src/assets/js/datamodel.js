@@ -38,5 +38,39 @@ export const getPersonCompany = (id) =>{
     })
 }
 
+/*Función que permite crear un visitante */
+export const visitorCreate = (visitorFirstName, visitorLastName, visitorEmail, visitorPhone, companyName, companyPerson) =>{
+    let dbVisitor = firebase.firestore();    
+    let dateEntrance = new Date();
+    let dateExit = new Date() ;
+    //Sumar 1 hora 
+    dateExit.setHours(dateEntrance.getHours()+1);
+
+    dbVisitor.collection("visitors").add({
+        firstname: visitorFirstName,
+        lastname: visitorLastName,
+        email: visitorEmail,
+        phone: visitorPhone,
+        company: companyName,
+        companyperson: companyPerson,
+        dateentrance:dateEntrance,
+        dateexit:dateExit
+    })
+    .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+        alert('Visita Ingresada');
+
+        window.location.hash="#/visitor";
+        document.getElementById('visitorfirstname').value='';
+        document.getElementById('visitorlastname').value='';
+        document.getElementById('visitoremail').value='';
+        document.getElementById('visitorphone').value='';
+        document.getElementById('company').value='Selecciona una empresa';
+        document.getElementById('companyperson').value='Selecciona...';
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
+    });
+}
 
 

@@ -1,4 +1,4 @@
-import { getCompanies} from '../js/datamodel.js'
+import {getCompanies, visitorCreate } from '../js/datamodel.js'
 
 export const templateVisitorRegistration = () =>{
     
@@ -34,4 +34,18 @@ export const templateVisitorRegistration = () =>{
     `;    
     
     getCompanies();
+
+    document.getElementById('registration').addEventListener('click',()=>{
+        let visitorFirstName = document.getElementById('visitorfirstname').value;
+        let visitorLastName = document.getElementById('visitorlastname').value;
+        let visitorEmail = document.getElementById('visitoremail').value;
+        let visitorPhone = document.getElementById('visitorphone').value;
+        let company = document.getElementById('company');
+        let companyName = company.options[company.selectedIndex].text;
+        let companyPerson = document.getElementById('companyperson').value;
+
+        visitorCreate(visitorFirstName, visitorLastName, visitorEmail, visitorPhone, companyName, companyPerson);
+    })
+
+    
 }
