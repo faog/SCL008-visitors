@@ -13,7 +13,7 @@ const changeRoute = (hash) =>{
         //le pasa como parametro #/a la función showTemplate
         return showTemplate(hash);
     }
-    if (hash === '#/visitorregistration') {
+    if (hash === '#/visitor') {
         //le pasa como parametro #/timeline a la función showTemplate
         return showTemplate(hash);
     }
