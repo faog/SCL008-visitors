@@ -1,23 +1,23 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: 0px auto;
     padding: 0px auto;
 }
 
-.templatesession h2{
+.templatesession h2 {
     margin-top: 200px;
     font-size: 48px;
     font-family: 'Lato', sans-serif;
 }
 
-.navbar  {
-    background-color:#48284A;
+.navbar {
+    background-color: #48284A;
     height: 130px;
 }
 
 .navbar a {
-    color:#DDDBF1;
+    color: #DDDBF1;
     font-family: 'Lato', sans-serif;
     font-size: 40px;
     margin-left: 0px;
@@ -28,31 +28,32 @@
     width: 60px;
 }
 
-#administration, #visit {
+#administration,
+#visit {
     border-radius: 15px;
     background-color: #3C4F76;
     height: 100px;
     width: 250px;
-    font-size: 32px; 
+    font-size: 32px;
     font-weight: bold;
     border: none;
-    margin-top: 100px;        
+    margin-top: 100px;
     color: #DDDBF1
 }
 
-.templatevisitors{
-    width: 80%;    
+.templatevisitors {
+    width: 80%;
     margin-top: 70px;
     font-size: 25px;
 }
 
-.templatevisitors input{
+.templatevisitors input {
     text-align: left;
     height: 60px;
     font-size: 20px;
 }
 
-.templatevisitors h5{
+.templatevisitors h5 {
     margin-bottom: 40px;
     font-size: 28px;
 }
@@ -63,7 +64,7 @@
     text-align: left;
 }
 
-#visitorinfo select{
+#visitorinfo select {
     margin-bottom: 15px;
     text-align: center;
     height: 60px;
@@ -78,7 +79,26 @@
     font-weight: bold;
     width: 50%;
     border: none;
-    margin-top: 40px;    
+    margin-top: 40px;
     margin-bottom: 10px;
     color: #DDDBF1;
+}
+
+#newregister,
+#visitorsrecord,
+#statistics {
+    border-radius: 15px;
+    background-color: #48284A;
+    height: 90px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #DDDBF1;
+}
+
+#adminmenu {
+    margin-top: 100px;
 }
