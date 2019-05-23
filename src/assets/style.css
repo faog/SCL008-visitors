@@ -1,11 +1,18 @@
+.navbar {
+    color:#3C4F76;
+}
+
+
+
 #administration, #visit {
     border-radius: 15px;
 	background-color: #3C4F76	;
-	height: 40px;
-	width: 150px;
+	height: 60px;
+	width: 200px;
 	font-size: 16px; 
 	border: none;
-	margin-top: 10px;
+    margin-top: 200px;
+    margin-left: 90px;
 	color: #DDDBF1
 }
 
