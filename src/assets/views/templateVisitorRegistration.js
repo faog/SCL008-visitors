@@ -13,8 +13,8 @@ export const templateVisitorRegistration = () =>{
       </a>
     </nav>
     <div class="templatevisitors">
-        <h3>Registro de visitantes</h3>
-        <h6>Por favor, complete el siguiente formulario:</h6>
+        <h1>Registro de visitantes</h1>
+        <h5>Por favor, complete el siguiente formulario:</h5>
         <article id="visitorinfo">   
             <input type="text" id="visitorfirstname" class="form-control" placeholder="Nombre"/>
             <p id="firstnameerror"></p>                                 
