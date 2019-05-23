@@ -25,6 +25,7 @@ export const templateNewCoworker = () =>{
             <select id="inputstate" class="form-control">            
             <option selected>Selecciona...</option>
             <option>...</option>  
+            
             <button id="add">Agregar</button>        
         </article>            
     </div>`
