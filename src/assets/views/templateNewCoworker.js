@@ -1,3 +1,6 @@
+import {coworkerCreate} from '../js/datamodel.js';
+import {validateEmail, validatePhone} from '../js/validate.js';
+
 export const templateNewCoworker = () => {
 
     document.getElementById('containervisitors').innerHTML =
@@ -37,7 +40,7 @@ export const templateNewCoworker = () => {
             <p id ="emailalert"></p>
             <input type="text" id="coworkerphone" class="form-control" placeholder="Número de celular"/>
             <p id ="phonealert"></p>
-            <select id="inputstate" class="form-control">            
+            <select id="coworkercompany" class="form-control">            
               <option selected>Empresa que pertenece</option>
               <option>Empresa 1</option>  
               <option>Empresa 2</option>
@@ -47,5 +50,41 @@ export const templateNewCoworker = () => {
         </article> 
     </div>
     `;
+  
+    document.getElementById('registrationcowork').addEventListener('click',()=>{
+      let coworkerFirstName = document.getElementById('coworkerfirstname').value;
+      let coworkerLastName = document.getElementById('coworkerlastname').value;
+      let coworkerEmail = document.getElementById('coworkeremail').value;
+      let coworkerPhone = document.getElementById('coworkerphone').value;
+      let coworkerCompany = document.getElementById('coworkercompany').value;
+      
+
+  /*IMPRESION VÁLIDACIONES EN EL DOM*/
+  if (coworkerFirstName===""){
+      document.getElementById('firstnamealert').innerHTML=`*Debes ingresar un nombre.`;      
+  }else{
+      document.getElementById('firstnamealert').innerHTML='';
+  }
+  
+  if (coworkerLastName===""){
+      document.getElementById('lastnamealert').innerHTML=`*Debes ingresar un apellido.`;
+  }else{
+      document.getElementById('lastnamealert').innerHTML='';
+  } 
+  
+  if(coworkerEmail==="" || !validateEmail(coworkerEmail)){
+      document.getElementById('emailalert').innerHTML=`*Debes ingresar un correo válido.`;
+  }else{
+      document.getElementById('emailalert').innerHTML='';
+  }  
+
+  if(coworkerPhone==="" || !validatePhone(coworkerPhone) || coworkerPhone.length!=9){
+      document.getElementById('phonealert').innerHTML=`*Debes ingresar un número de telefono.`;
+  }else{
+      document.getElementById('phonealert').innerHTML='';
+  }  
+
+  coworkerCreate(coworkerFirstName, coworkerLastName, coworkerEmail, coworkerPhone, coworkerCompany);
+  })  
 
 }

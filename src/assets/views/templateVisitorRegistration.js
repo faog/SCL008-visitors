@@ -1,6 +1,6 @@
 
 import {getCompanies, visitorCreate } from '../js/datamodel.js';
-import {validateEmail} from '../js/validate.js';
+import {validateEmail, validatePhone} from '../js/validate.js';
 
 
 export const templateVisitorRegistration = () =>{
@@ -67,15 +67,12 @@ export const templateVisitorRegistration = () =>{
         document.getElementById('emailerror').innerHTML='';
     }  
 
-    if(visitorPhone==="" || visitorPhone.length<9 || visitorPhone.length>9){
+    if(visitorPhone==="" || !validatePhone(visitorPhone) || visitorPhone.length!=9){
         document.getElementById('phoneerror').innerHTML=`*Debes ingresar un número de telefono.`;
     }else{
         document.getElementById('phoneerror').innerHTML='';
     }  
-
         visitorCreate(visitorFirstName, visitorLastName, visitorEmail, visitorPhone, companyName, companyPerson);
-    })
-
-    
+    })    
 
 }
