@@ -3,21 +3,6 @@ import { postVisitor } from "../js/datamodel.js";
 export const templateVisitorsRecord = () => {
 
   document.getElementById('containervisitors').innerHTML +=
-  `
-  <h1>Información usuario</h1>
-  <article id="visitorcard">
-
-  </article> 
-
-  `
-  postVisitor();
-}
-
-/*Función que imprime en el html de las fichas de los visitantes*/
-
-export const renderVisitor = async (doc)=>{    
-  document.getElementById('visitorcard').innerHTML+= 
-  
   `<nav class="navbar">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
@@ -41,13 +26,30 @@ export const renderVisitor = async (doc)=>{
     </ul>
   </div>
 </nav> 
+  <h1 id="title">Historial visitantes</h1>
+  <article id="visitorcard">
+
+  </article> 
+
+  `
+  postVisitor();
+}
+
+/*Función que imprime en el html de las fichas de los visitantes*/
+
+export const renderVisitor = async (doc)=>{    
+  document.getElementById('visitorcard').innerHTML+= 
+  
+  `
   <div id="target">
-  <p>Nombre: ${doc.data().firstname} ${doc.data().lastname} </p>
-  <p>Correo electrónico: ${doc.data().email}</p>
-  <p>Celular: (+56) ${doc.data().phone}</p>
-  <p>Persona que visita: ${doc.data().companyperson}, ${doc.data().company} </p>
-  <p>Hora de Entrada: ${doc.data().dateentrance.toDate()}</p>
-  <p>Hora de Salida:${doc.data().dateexit.toDate()}</p>
+  <div id="userinfo">
+  <p><strong>Nombre:</strong> ${doc.data().firstname} ${doc.data().lastname} </p>
+  <p><strong>Correo electrónico:</strong> ${doc.data().email}</p>
+  <p><strong>Celular: (+56)</strong> ${doc.data().phone}</p>
+  <p><strong>Persona que visita:</strong> ${doc.data().companyperson}, ${doc.data().company} </p>
+  <p><strong>Hora de Entrada:</strong> ${doc.data().dateentrance.toDate()}</p>
+  <p><strong>Hora de Salida:</strong>${doc.data().dateexit.toDate()}</p>
+  </div>
   <p class="cardphoto" id="photo_${doc.id.toString()}"></p>
   `
   let imageURL = await firebase.storage().ref(doc.id.toString()+".png").getDownloadURL();
