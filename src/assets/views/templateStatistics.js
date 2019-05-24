@@ -1,4 +1,4 @@
-export const templateVisitorsRecord = () => {
+export const templateStatistics = () => {
 
     document.getElementById('containervisitors').innerHTML =
 
@@ -25,24 +25,5 @@ export const templateVisitorsRecord = () => {
           </ul>
         </div>
       </nav> 
-    <div id=cardbody class="card mb-3" style="max-width: 540px;">
-    <div class="row no-gutters">
-      <div class="col-md-4">
-        <img src="/assets/img/user-icon.png" class="card-img" alt="...">
-        
-      </div>
-      <div class="col-md-8">
-        <div id=cardinfo class="card-body">
-          <p class="card-text">Nombre:</p>
-          <p class="card-text">Apellidos:</p>
-          <p class="card-text">Número celular:</p>
-          <p class="card-text">Empresa que visita:</p>
-          <p class="card-text">Persona que visita:</p>
-          <p class="card-text"><small class="text-muted">Hr entrada:</small></p>
-          <p class="card-text"><small class="text-muted">Hr salida:</small></p>
-          
-        </div>
-      </div>
-    </div>
-  </div>`
+    `
 };
