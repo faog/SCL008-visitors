@@ -1,35 +1,51 @@
 export const templateNewCoworker = () => {
 
     document.getElementById('containervisitors').innerHTML =
-        `<nav class="navbar">
+    `
+    <nav class="navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">----</span>
+      </button>
+
       <a class="navbar-brand" href="#">
-        <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
         PaseNoma'
       </a>
-      <li>
-
-    <a id="newregister">Nuevo Registro</a>
-    <a id="visitorsrecord">Historial de Visitantes</a>
-    <a id="statistics">Estadisticas</a>
-</li>
-     </nav>
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="#/newregister">Nuevo registro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#/visitorshistory">Historial de visitantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#/statics">Estadisticas</a>
+          </li>						
+        </ul>
+      </div>
+    </nav>
     <div class="templatevisitors">
-        <article id="visitorinfo">   
-            <input type="text" id="coworkerfirstname" class="form-control" placeholder="Ingresa nombre"/>
+        <article id="visitorinfo"> 
+          <h1>Registro de empleados</h1>
+            <input type="text" id="coworkerfirstname" class="form-control" placeholder="Nombre"/>
             <p id="firstnamealert"></p>
-            <input type="text" id="coworkerlastname"class="form-control"  placeholder="Ingresa apellido"/>
+            <input type="text" id="coworkerlastname"class="form-control"  placeholder="Apellidos"/>
             <p id="lastnamealert"></p>
-            <input type="email" id= "coworkeremail" class="form-control" placeholder="Ingresa email"/>
+            <input type="email" id= "coworkeremail" class="form-control" placeholder="Correo electrónico"/>
             <p id ="emailalert"></p>
-            <input type="text" id="coworkerphone" class="form-control" placeholder="Ingresa n°de celular"/>
+            <input type="text" id="coworkerphone" class="form-control" placeholder="Número de celular"/>
             <p id ="phonealert"></p>
             <select id="inputstate" class="form-control">            
-            <option selected>Selecciona...</option>
-            <option>compañia 1</option>  
-            <option>compañia 2</option>
-            <option>compañia 3</option> 
-            <button id="registration">Registrarse</button>  
+              <option selected>Empresa que pertenece</option>
+              <option>Empresa 1</option>  
+              <option>Empresa 2</option>
+              <option>Empresa 3</option> 
+            </select>
+            <button id="registrationcowork">Registrar</button>  
         </article> 
     </div>
     `;
+
 }
