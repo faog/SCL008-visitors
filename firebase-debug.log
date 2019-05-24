@@ -1,0 +1,22 @@
+[debug] [2019-05-24T01:40:11.529Z] ----------------------------------------------------------------------
+[debug] [2019-05-24T01:40:11.532Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2019-05-24T01:40:11.532Z] CLI Version:   6.8.0
+[debug] [2019-05-24T01:40:11.532Z] Platform:      linux
+[debug] [2019-05-24T01:40:11.532Z] Node Version:  v11.8.0
+[debug] [2019-05-24T01:40:11.532Z] Time:          Thu May 23 2019 21:40:11 GMT-0400 (GMT-04:00)
+[debug] [2019-05-24T01:40:11.532Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-24T01:40:11.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-24T01:40:11.540Z] > authorizing via signed-in user
+[debug] [2019-05-24T01:40:11.540Z] [iam] checking project visitors-hackathon for permissions ["firebase.projects.get"]
+[debug] [2019-05-24T01:40:11.542Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon:testIamPermissions  
+
+[debug] [2019-05-24T01:40:12.808Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-24T01:40:12.810Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/visitors-hackathon  
+ 
+[debug] [2019-05-24T01:40:13.875Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/laboratoriad106/Escritorio/SCL008-visitors'...
+[info] 
+[debug] [2019-05-24T01:40:13.882Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/83010117216/clients/_:getWebAppConfig  
+ 

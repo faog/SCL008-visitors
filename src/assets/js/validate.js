@@ -28,9 +28,3 @@ export const validateNewCoworker = (coWorkerFirstName, coWorkerLastName, coWorke
         return true;
     }
 }
-
-export const validateEmailWork = (CoWorkerNewEmail) => {
-    //expresión regular que simula el patrón del correo electrónico
-    let pattern = /\S+@\S+\.\S+/;
-    return pattern.test(CoWorkerNewEmail);
-};
