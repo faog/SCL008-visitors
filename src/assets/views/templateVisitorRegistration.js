@@ -41,7 +41,7 @@ export const templateVisitorRegistration = () =>{
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Tomar Fotografía</h5>
+                <h5 class="modal-title">Fotografía</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -50,12 +50,12 @@ export const templateVisitorRegistration = () =>{
                 <!-- Video desde la Webcam -->
                 <video id="video" playsinline autoplay class="row border"></video>
                 <!-- Tomar foto -->
-                <button id="takephoto" class="btn btn-primary">Tomar Fotografía</button>
+                <button id="takephoto">Tomar fotografía</button>
                 <!-- Vista previa -->
                 <canvas id="canvas" width="320" height="200" class="row border"></canvas>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                <button type="button" id="closephoto" data-dismiss="modal">Cerrar</button>
             </div>
             </div>
         </div>

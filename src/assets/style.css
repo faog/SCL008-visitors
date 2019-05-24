@@ -86,7 +86,7 @@
     font-size: 20px;
 }
 
-#registration, #registrationcowork {
+#registration, #registrationcowork, #photo {
     border-radius: 15px;
     background-color: #48284A;
     height: 80px;
@@ -99,13 +99,26 @@
     color: #DDDBF1;
 }
 
-#newregister,#visitorsrecord,#statistics {
+#newregister,#visitorsrecord,#statistics, #takephoto {
     border-radius: 15px;
     background-color:  #3C4F76;
     height: 90px;
     font-size: 24px;
     font-weight: bold;
     width: 50%;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #DDDBF1;
+}
+
+#takephoto, #closephoto {
+    border-radius: 15px;
+    background-color: #3C4F76;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
