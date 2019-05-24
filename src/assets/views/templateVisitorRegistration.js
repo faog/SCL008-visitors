@@ -7,10 +7,10 @@ export const templateVisitorRegistration = () =>{
     
     document.getElementById('containervisitors').innerHTML=    
     `<nav class="navbar">
-      <a class="navbar-brand" href="#">
-       <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        PaseNoma'
-      </a>
+        <a class="navbar-brand" href="#">
+        <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+            PaseNoma'
+        </a>
     </nav>
     <div class="templatevisitors">
         <h1>Registro de visitantes</h1>
@@ -125,14 +125,15 @@ export const templateVisitorRegistration = () =>{
             document.getElementById("takephoto").addEventListener('click',()=>{
                 context.drawImage(video, 0, 0, 320, 200);  //copia el cuadro del video y lo copia al otro canvas (toma la foto)
             })
-
-        }).catch((error)=>{alert('Ha ocurrido un error abriendo la cámara: ' + error)});
+        }).catch((error)=>{
+            alert('Ha ocurrido un error abriendo la cámara: ' + error)
+        });
     });
 
     //Parar la camara al momento de cerrar el modal
     $('#modalphoto').on('hidden.bs.modal',()=>{
         window.stream.getVideoTracks().forEach((videoTrack)=>{
-            videoTrack.stop();
+            videoTrack.stop();    
         });
     })
 }
