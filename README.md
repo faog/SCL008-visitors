@@ -108,9 +108,9 @@ Las principales funciones de [PaseNoma'](https://fabytapia.github.io/SCL008-visi
 
 ### Autoras 📌
 
-* 
 * Fabiola Orellana 
 * Fabiola Tapia
+* Stephanie Mayen
 
 8° Generación de Laboratoria.
 
