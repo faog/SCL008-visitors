@@ -131,3 +131,22 @@
     font-size: 28px;
 }
 
+#cardbody{
+    margin-top: 60px;
+    border-color: #3C4F76;
+    border-width: 5px;
+    width: 547px;
+
+}
+#cardbody img{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+#cardinfo p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+

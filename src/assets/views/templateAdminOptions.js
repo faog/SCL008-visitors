@@ -1,4 +1,6 @@
 import { templateNewCoworker } from './templateNewCoworker.js';
+import { templateVisitorsRecord } from './templateVisitorsRecord.js';
+import { templateStatistics } from './templateStatistics.js';
 
 export const templateAdminOptions = () => {
 
@@ -23,5 +25,15 @@ export const templateAdminOptions = () => {
     document.getElementById('newregister').addEventListener('click', () => {
         templateNewCoworker();
         window.location.hash = "#/newregister"
+    })
+
+    document.getElementById('visitorsrecord').addEventListener('click', () => {
+        templateVisitorsRecord();
+        window.location.hash = "#/visitorsrecord"
+    })
+
+    document.getElementById('statistics').addEventListener('click', () => {
+        templateStatistics();
+        window.location.hash = "#/statistics"
     })
 };
