@@ -162,4 +162,14 @@
     margin-bottom: 5px;
 }
 
+#infomessage {
+    margin-top:80px;
+}
+
+#infomessage img {
+    margin-top:40px;
+    height: 50%;
+    width: 50%;
+}
+
 
