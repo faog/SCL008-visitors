@@ -2,27 +2,31 @@
 
 ## Preámbulo
 
-Seguramente te ha ocurrido que vas con el tiempo justo para llegar a una cita de trabajo, pero oh sorpresa!, justo cuando creias lograrlo te encuentras con el último obstaculo: registrarse para poder entrar D:!, ves una fila de personas formadas para el registro y de repente quisieras que la recepcionista fuera una máquina super rápida que aparte escribiera tu nombre y correo de la forma correcta.
+Seguramente te ha ocurrido que vas con el tiempo justo para llegar a una cita de trabajo, pero oh sorpresa!, justo cuando creías lograrlo te encuentras con el último obstáculo: registrarse para poder entrar D:!, ves una fila de personas formadas para el registro y de repente quisieras que la recepcionista fuera una máquina súper rápida que aparte escribiera tu nombre y correo de la forma correcta.
 
-[PaseNoma'](https://fabytapia.github.io/SCL008-visitors/) es una aplicación desarrollada para tablets que facilitará tu registro y lo guardará de manera eficiente,. No solo será una ventaja para el ti, sino también para la recepcionista que no es una máquina, pero que puede usar una para eficientar su trabajo. 
+[PaseNoma'](https://fabytapia.github.io/SCL008-visitors/) es una aplicación desarrollada para tablets que facilitará tu registro y lo guardará de manera eficiente,. No solo será una ventaja para ti, sino también para la recepcionista que no es una máquina, pero que puede usar una para beneficiar su trabajo. 
 
 ## Planificación 🚀
 
-La planificacion fue realizada en trello, la cual puedes revisar [aquí](https://trello.com/b/46lkgMpe/visitors).
+La planificación fue realizada en trello, la cual puedes revisar [aquí](https://trello.com/b/46lkgMpe/visitors).
 
 ## Usuarios 👪
 
 Lo primero y esencial es conocer al usuario. Para ello se realizó una [entrevista](https://photos.app.goo.gl/poKEZtnMBKzwXvUJ8) en la que se pudo identificar las siguientes respuestas:
 
--  
+- seria ideal tener una base de datos de todas las empresas,y encargados de recibir las visitas 
 
-### Fase de Prototipado 📋
+- si bien entre mas rápido sea la recepción de visitas mejor es el flujo, por lo que seria mas dinámico.
+
+- Uno de los principales problemas fue que no llevan control de salida de las visitas, por lo que si hacen mejoras digitales de recepción seria un buen punto para solucionar. 
+
+### Fase de Prototipo 📋
 
 Una vez reconocido el usuario, comienza el proceso creativo compuesto por diferentes pasos que buscan dar con un resultado esperado por nosotras, pero principalmente pensado para el usuario. 
 
 **¿Cuál es la necesidad de nuestros usuarios?**
 
-A partir de la encuesta realizada nacen distintas historias de usuario (**HU**)  que describen las necesidades de los usuarios, buscando cubrirlas a partir de los criterios de terminado (**CT**) que se desarrollan en cada una de ellas.
+A partir de la encuesta realizada nacen distintas historias de usuario (**HU**) que describen las necesidades de los usuarios, buscando cubrirlas a partir de los criterios de terminado (**CT**) que se desarrollan en cada una de ellas.
 
 **1) COMO** visitante del edificio **QUIERO** poder registrar mi ingreso, **PARA** poder controlar mi estadía en el lugar.
 
@@ -41,7 +45,7 @@ Los criterios de terminado para estas HU son:
 
 ## Prototipo de Baja Fidelidad
 
-Una vez reconocido el usuario, comienza el proceso creativo de prototipado de baja fidelidad, el cual fue realizado en [figma](https://www.figma.com/file/dzD14n5Y14JQSQThrLx3UStC/Visitors?node-id=0%3A1); destacando las principales vistas:
+Una vez reconocido el usuario, comienza el proceso creativo de prototipo de baja fidelidad, el cual fue realizado en [figma](https://www.figma.com/file/dzD14n5Y14JQSQThrLx3UStC/Visitors?node-id=0%3A1); destacando las principales vistas:
 
 - Registro de visitantes.
 - Registro de empleados.
@@ -59,12 +63,12 @@ Una vez reconocido el usuario, comienza el proceso creativo de prototipado de ba
 como plataforma de desarrollo.
 * Creación de distintas vistas, gestionadas por un archivo (router.js) que permite su visualización, dependiendo de las elecciones del usuario.
 * Desarrollo de funciones para que el visitante pueda registrar su visita utilizando la base de datos [cloud firestore](https://firebase.google.com/docs/firestore/?hl=es-419).
-* Guardar fotografia del visitante, usando [cloud storage](https://firebase.google.com/docs/storage/?hl=es-419).
-* Desarroolo de funciones para que el administrador pueda registrar a empleados que trabajen en el edificio.
+* Guardar fotografiá del visitante, usando [cloud storage](https://firebase.google.com/docs/storage/?hl=es-419).
+* Desarrollo de funciones para que el administrador pueda registrar a empleados que trabajen en el edificio.
 * Desarrollo de funciones para que el administrador pueda acceder a la ficha de los visitantes registrados.
 * Implementación de validaciones; como es el caso de campos vacíos, formato de correo electrónico y formato de número de celular. Todo esto testeado en el archivo auth.spec.js.
 * Manejo de estilos CSS pensado en mobile first; usando bootstrap.
-* Testeos de usabilidad y code review por cada historia de usuario finalizada.
+* Testeo de usabilidad y code review por cada historia de usuario finalizada.
 * Trabajo colaborativo mediante el uso de Git y GitHub :octocat:, realizando realeses por cada historia de usuario terminada. 
 * Deploy con gh-pages de la aplicación [PaseNoma'](https://fabytapia.github.io/SCL008-visitors/)
 * Deploy con firebase de la aplicación [PaseNoma'](https://visitors-hackathon.firebaseapp.com/)
@@ -95,8 +99,8 @@ Las principales funciones de [PaseNoma'](https://fabytapia.github.io/SCL008-visi
 
 * Se realizó test para comprobar el funcionamiento de la aplicación, logrando los siguientes resultados: 
 
-  - % Statements: 100; % Branch: 100; % Functions: 100; % Lines: 100
-  ![coverage](https://i.postimg.cc/j2kdGfwb/Whats-App-Image-2019-04-12-at-14-35-47.jpg)   
+- % Statements: 100; % Branch: 100; % Functions: 100; % Lines: 100
+![coverage](img_readme/coverage.jpg) 
 
 ### Futuras mejoras ⌨️
 
