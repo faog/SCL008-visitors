@@ -1,18 +1,31 @@
 export const templateNewCoworker = () => {
 
     document.getElementById('containervisitors').innerHTML =
-        `<nav class="navbar">
+    `
+    <nav class="navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">----</span>
+      </button>
+
       <a class="navbar-brand" href="#">
-        <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
         PaseNoma'
       </a>
-        <li>
-
-            <a id="newregister">Nuevo Registro</a>
-            <a id="visitorsrecord">Historial de Visitantes</a>
-            <a id="statistics">Estadisticas</a>
-        </li>
-     </nav>
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="#/newregister">Nuevo registro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#/visitorshistory">Historial de visitantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#/statics">Estadisticas</a>
+          </li>						
+        </ul>
+      </div>
+    </nav>
      <div class="templatevisitors">
         <article id="visitorinfo">   
             <input type="text" id="coworkerfirstname" class="form-control" placeholder="Ingresa nombre"/>

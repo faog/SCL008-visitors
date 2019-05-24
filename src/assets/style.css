@@ -14,6 +14,11 @@
 .navbar {
     background-color: #48284A;
     height: 130px;
+    justify-content: flex-start;
+    z-index: 100;
+}
+.navbar-nav{
+    background-color: #48284A;
 }
 
 .navbar a {
@@ -26,6 +31,17 @@
 .navbar img {
     height: 60px;
     width: 60px;
+}
+
+.navbar-nav .nav-link {
+    font-size:28px;  
+    font-weight: normal;  
+}
+
+.navbar-toggler-icon{
+    color: #DDDBF1;
+    font-size:28px;  
+    font-weight: bold; 
 }
 
 #administration,#visit {
@@ -114,3 +130,4 @@
     margin-bottom: 40px;
     font-size: 28px;
 }
+
