@@ -1,11 +1,12 @@
 import {validateRegistration, validateNew} from'./validate.js';
 
 //Funcion para traerse la informacion de la compañia y llenar el selector company
-export const getCompanies = () =>{
+export const getCompanies = (defaultoption) =>{
     let dbCompany = firebase.firestore();
     dbCompany.collection("company").orderBy("companyName","asc").get()
     .then((querySnapshot) => {
         let selectCompany=document.getElementById('company');
+        selectCompany.innerHTML = `<option selected>${defaultoption}</option>`
         querySnapshot.forEach((doc) => {
             selectCompany.innerHTML+=
             `
@@ -22,24 +23,24 @@ export const getCompanies = () =>{
 
 export const getPersonCompany = (id) =>{
     let dbCompany = firebase.firestore();
-    dbCompany.collection("company").doc(id).get()
-    .then((company)=>{
+    dbCompany.collection("coworker").where("company","==",id).get()
+    .then((querySnapshot)=>{
         let selectPersonCompany=document.getElementById('companyperson');
         selectPersonCompany.innerHTML=
         `
-        <option selected>Seleccione la empresa que visita</option>
+        <option selected>Seleccione la persona que visita</option>
         `
-        company.data().persons.forEach((person)=>{            
+        querySnapshot.forEach((coworker)=>{            
             selectPersonCompany.innerHTML+=
             `
-            <option value="${person}">${person}</option>
+            <option value="${coworker.id}">${coworker.data().firstname} ${coworker.data().lastname}</option>
             `
         })
     })
 }
 
 /*Función que permite crear un visitante */
-export const visitorCreate = (visitorFirstName, visitorLastName, visitorEmail, visitorPhone, companyName, companyPerson) =>{
+export const visitorCreate = (visitorFirstName, visitorLastName, visitorEmail, visitorPhone, companyName, companyPerson,companyPersonId, photo) =>{
     let dbVisitor = firebase.firestore(); 
     if(validateRegistration(visitorFirstName, visitorLastName, visitorEmail, visitorPhone)){   
         let dateEntrance = new Date();
@@ -54,14 +55,24 @@ export const visitorCreate = (visitorFirstName, visitorLastName, visitorEmail, v
             phone: visitorPhone,
             company: companyName,
             companyperson: companyPerson,
+            companypersonid: companyPersonId,
             dateentrance:dateEntrance,
             dateexit:dateExit
         })
         .then(function(docRef) {
             console.log("Document written with ID: ", docRef.id);
             alert('Visita Ingresada');
-            cleanViewVisitors();
-            window.location.hash="#/visitor";
+            //Guardar foto en Firebase Storage
+            let ref = firebase.storage().ref();
+            let filename = docRef.id.toString() +".png";
+            let photoRef = ref.child(filename);
+            photoRef.put(photo).then(function(snapshot){
+                alert('foto subida');
+                cleanViewVisitors();
+                window.location.hash="#/visitor";
+            }).catch((error)=>{
+                console.log(error);
+            });
         })
         .catch(function(error) {
             console.error("Error adding document: ", error);
@@ -93,7 +104,8 @@ export const coworkerCreate = (coworkerFirstName, coworkerLastName, coworkerEmai
         })
         .then(function(docRef) {
             console.log("Document written with ID: ", docRef.id);
-            alert('Empleado registrado');            
+            alert('Empleado registrado');  
+            cleanViewCoworker();          
             window.location.hash="#/newregister";
         })
         .catch(function(error) {
@@ -102,4 +114,12 @@ export const coworkerCreate = (coworkerFirstName, coworkerLastName, coworkerEmai
     }else{
         return "error en la validación del input vacío";
     }
+}
+
+export const cleanViewCoworker = () =>{
+    document.getElementById('coworkerfirstname').value='';
+    document.getElementById('coworkerlastname').value='';
+    document.getElementById('coworkeremail').value='';
+    document.getElementById('coworkerphone').value='';
+    document.getElementById('company').value='Empresa que pertenece';    
 }
