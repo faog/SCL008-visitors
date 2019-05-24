@@ -1,4 +1,4 @@
-import { validateEmail, /*validateNewCoworker,*/ validateRegistration } from "./../src/assets/js/validate.js";
+import { validateEmail, validateNewCoworker, validateRegistration } from "./../src/assets/js/validate.js";
 
 /*1) Validaciones para validateRegistration()*/
 describe("validateRegistration", () => {
@@ -24,11 +24,10 @@ describe('validateEmail', () => {
         expect(validateEmail('ftapiamorales@gmail.com')).not.toBe(false);
     });
 });
+/*1) Validaciones para validateNewCoworker*/
 
-/*
 describe('validateNewCoworker', () => {
-    it('deberia retornar false, si este campo no esta completado', () => {
-        expect(validateNewCoworker("")).not.toBe(true);
+    it('deberia retornar false, si los campos no estan completados', () => {
+        expect(validateNewCoworker("", "", "", "")).toBe(false);
     });
 });
-*/
