@@ -21,10 +21,10 @@ export const templateNewCoworker = () => {
             <a class="nav-link" href="#/newregister">Nuevo registro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#/visitorshistory">Historial de visitantes</a>
+            <a class="nav-link" href="#/visitorsrecord">Historial de visitantes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#/statics">Estadisticas</a>
+            <a class="nav-link" href="#/statistics">Estadisticas</a>
           </li>						
         </ul>
       </div>
@@ -76,7 +76,7 @@ export const templateNewCoworker = () => {
   }  
 
   if(coworkerPhone==="" || !validatePhone(coworkerPhone) || coworkerPhone.length!=9){
-      document.getElementById('phonealert').innerHTML=`*Debes ingresar un número de telefono.`;
+      document.getElementById('phonealert').innerHTML=`*Debes ingresar nueve dígitos.`;
   }else{
       document.getElementById('phonealert').innerHTML='';
   }  

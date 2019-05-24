@@ -95,7 +95,7 @@ export const templateVisitorRegistration = () =>{
         }  
 
         if(visitorPhone==="" || !validatePhone(visitorPhone) || visitorPhone.length!=9){
-            document.getElementById('phoneerror').innerHTML=`*Debes ingresar un número de telefono.`;
+            document.getElementById('phoneerror').innerHTML=`*Debes ingresar nueve dígitos.`;
         }else{
             document.getElementById('phoneerror').innerHTML='';
         }  
