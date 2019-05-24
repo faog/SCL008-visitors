@@ -1,4 +1,4 @@
-import {validateRegistration} from'./validate.js';
+import {validateRegistration, validateNew} from'./validate.js';
 
 //Funcion para traerse la informacion de la compañia y llenar el selector company
 export const getCompanies = () =>{
@@ -12,7 +12,6 @@ export const getCompanies = () =>{
             <option value="${doc.id}">${doc.data().companyName}</option>
             `
         });
-
         selectCompany.addEventListener('change',()=>{
             getPersonCompany(selectCompany.value);
         })
@@ -28,7 +27,7 @@ export const getPersonCompany = (id) =>{
         let selectPersonCompany=document.getElementById('companyperson');
         selectPersonCompany.innerHTML=
         `
-        <option selected>Selecciona...</option>
+        <option selected>Seleccione la empresa que visita</option>
         `
         company.data().persons.forEach((person)=>{            
             selectPersonCompany.innerHTML+=
@@ -63,7 +62,6 @@ export const visitorCreate = (visitorFirstName, visitorLastName, visitorEmail, v
             alert('Visita Ingresada');
             cleanViewVisitors();
             window.location.hash="#/visitor";
-
         })
         .catch(function(error) {
             console.error("Error adding document: ", error);
@@ -73,11 +71,35 @@ export const visitorCreate = (visitorFirstName, visitorLastName, visitorEmail, v
     }
 }
 
-export const cleanViewVisitors = (visitorFirstName, visitorLastName, visitorEmail, visitorPhone, companyName, companyPerson) =>{
+export const cleanViewVisitors = () =>{
     document.getElementById('visitorfirstname').value='';
     document.getElementById('visitorlastname').value='';
     document.getElementById('visitoremail').value='';
     document.getElementById('visitorphone').value='';
-    document.getElementById('company').value='Selecciona una empresa';
-    document.getElementById('companyperson').value='Selecciona...';
+    document.getElementById('company').value='Seleccione la empresa que visita';
+    document.getElementById('companyperson').value='Seleccione la persona que visita';
+}
+
+/*Función que permite crear un empleado */
+export const coworkerCreate = (coworkerFirstName, coworkerLastName, coworkerEmail, coworkerPhone, coworkerCompany) =>{
+    let dbCoWorker = firebase.firestore(); 
+    if(validateNew(coworkerFirstName, coworkerLastName, coworkerEmail, coworkerPhone, coworkerCompany)){   
+        dbCoWorker.collection("coworker").add({
+            firstname: coworkerFirstName,
+            lastname: coworkerLastName,
+            email: coworkerEmail,
+            phone: coworkerPhone,  
+            company: coworkerCompany 
+        })
+        .then(function(docRef) {
+            console.log("Document written with ID: ", docRef.id);
+            alert('Empleado registrado');            
+            window.location.hash="#/newregister";
+        })
+        .catch(function(error) {
+            console.error("Error adding document: ", error);
+        });
+    }else{
+        return "error en la validación del input vacío";
+    }
 }
