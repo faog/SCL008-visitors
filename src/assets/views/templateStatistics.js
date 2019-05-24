@@ -27,6 +27,7 @@ export const templateStatistics = () => {
       </nav> 
       <article id="infomessage"> 
           <h1>Página en construcción...</h1>
+          <img src="./assets/img/idea.png"  alt="inConstruction">
       <article/>    
     `
 };
