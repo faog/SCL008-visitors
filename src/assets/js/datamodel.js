@@ -125,15 +125,15 @@ export const cleanViewCoworker = () => {
     document.getElementById('company').value = 'Empresa que pertenece';
 }
 
-export const postVisitor = () => {
-    let dbVisitor = firebase.firestore();
-    dbVisitor.collection("visitor").orderBy("dateentrance", "desc").get()
-        .then((querySnapshot) => {
-            if (document.getElementById("cardinfo")) {
-                document.getElementById("cardinfo").innerHTML = "";
-            }
-            querySnapshot.forEach((doc) => {
-                renderVisitor(doc);
-            })
-        })
+export const postVisitor = () =>{
+    let dbvisitors = firebase.firestore();
+    dbvisitors.collection("visitors").orderBy("dateentrance","desc").get()
+    .then((querySnapshot) => {
+        if(document.getElementById('visitorcard')){
+            document.getElementById('visitorcard').innerHTML = '';
+        }
+        querySnapshot.forEach((doc) => {
+            renderVisitor(doc);
+        });      
+    });
 }
