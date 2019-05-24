@@ -7,7 +7,7 @@ export const templateNewCoworker = () => {
     `
     <nav class="navbar">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon">----</span>
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
       </button>
       <a class="navbar-brand" href="#">
         <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
