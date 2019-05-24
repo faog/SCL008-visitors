@@ -43,4 +43,4 @@ export const validateNewCoworker = (coWorkerFirstName, coWorkerLastName, coWorke
     } else {
         return true;
     }
-}
+};

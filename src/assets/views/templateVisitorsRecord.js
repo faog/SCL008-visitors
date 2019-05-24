@@ -2,7 +2,13 @@ export const templateVisitorsRecord = () => {
 
     document.getElementById('containervisitors').innerHTML =
 
-        ` <div class="card mb-3" style="max-width: 540px;">
+        `<nav class="navbar">
+        <a class="navbar-brand" href="#">
+        <img src="./assets/img/come-inc.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          PaseNoma'
+        </a>
+      </nav> 
+        <div class="card mb-3" style="max-width: 540px;">
     <div class="row no-gutters">
       <div class="col-md-4">
         <img src="..." class="card-img" alt="...">
