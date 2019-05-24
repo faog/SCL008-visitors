@@ -2,133 +2,112 @@
 
 ## Preámbulo
 
-Seguramente te ha ocurrido que vas con el tiempo justo para llegar a una cita de trabajo pero oh sorpresa! justo cuando creias lograrlo te encuentras con el ultimo obstaculo: registrarse para poder entrar D:! , ves una fila de personas formadas para el registro y de repente quisieras que la recepcionista fuera una máquina super rápida que aparte escribiera tu nombre y correo de la forma correcta sin tanto, me lo repites? PaseNoma' es una aplicación para tablets que facilitará tu registro y lo guardará de manera eficiente, no solo será una ventaja para el ti sino también para la recepcionista que no es una máquina pero que obvio puede usar una para eficientar su trabajo. 
+Seguramente te ha ocurrido que vas con el tiempo justo para llegar a una cita de trabajo, pero oh sorpresa!, justo cuando creias lograrlo te encuentras con el último obstaculo: registrarse para poder entrar D:!, ves una fila de personas formadas para el registro y de repente quisieras que la recepcionista fuera una máquina super rápida que aparte escribiera tu nombre y correo de la forma correcta.
 
+[PaseNoma'](https://fabytapia.github.io/SCL008-visitors/) es una aplicación desarrollada para tablets que facilitará tu registro y lo guardará de manera eficiente,. No solo será una ventaja para el ti, sino también para la recepcionista que no es una máquina, pero que puede usar una para eficientar su trabajo. 
 
-## Introducción
+## Planificación 🚀
 
- [WeWork](https://www.wework.com/es-ES/l/santiago-de-chile)
-al mercado latinoamericano, tienen mucha más competencia y necesitan invertir en
-tecnología para mejorar su servicio; el registro de visitantes es un primer
-acercamiento. Te dan la referencia de [Envoy](https://envoy.com/) en EEUU (un
-servicio que ofrece un sistema digital de registro de visitantes) y ustedes
-tienen que desarrollar una versión mínima viable (ver anexo I abajo).
+La planificacion fue realizada en trello, la cual puedes revisar [aquí](https://trello.com/b/46lkgMpe/visitors).
 
+## Usuarios 👪
 
-### 1. Planificación y organización
+Lo primero y esencial es conocer al usuario. Para ello se realizó una [entrevista](https://photos.app.goo.gl/poKEZtnMBKzwXvUJ8) en la que se pudo identificar las siguientes respuestas:
 
-Explicar nuestra planificación poner fotos de trello
+-  
 
-Es muy importante que al dividirse/distribuir/repartir el trabajo, lo hagan
-pensando de manera ágil y no en cascada. Es decir, si una de ustedes está
-esperando a que otra termine "su parte" para empezar a trabajar, algo anda mal,
-¡[eso se parece a la organización del trabajo industrial!](https://media.giphy.com/media/OQ872dEsRi8cU/source.gif).
-Todas son responsables del producto final y todas pueden (y deben) colaborar en
-el diseño, el desarrollo y la planificación.
+### Fase de Prototipado 📋
 
-TIPS:
+Una vez reconocido el usuario, comienza el proceso creativo compuesto por diferentes pasos que buscan dar con un resultado esperado por nosotras, pero principalmente pensado para el usuario. 
 
-* Recuerda a nuestras BFFs, [las historias de usuario](http://jmbeas.es/guias/historias-de-usuario/)
-* Ten siempre en mente evitar el desperdicio. Por ejemplo: ¿de qué sirve que
-  tengas el prototipo del 100% de un proyecto en Figma (alta definición) si
-  solamente implementas el 50% del proyecto? El otro 50% del prototipo se podría
-  considerar como desperdicio.
-* Limitar el trabajo en progreso. Si son 2 personas, procuren no tener más de 2
-  tareas a la vez en "doing".
-* ¿Estás segura de que quieren seguir invirtiendo más minutos de tu vida (que no
-  volverán) en discutir los colores del logotipo?
-  [Aquí hay algo que te puede ayudar a decidir](https://play.google.com/store/apps/details?id=com.flip.war_daddy.flip_coin).
+**¿Cuál es la necesidad de nuestros usuarios?**
 
-### 2. Detalles sobre la implementación
+A partir de la encuesta realizada nacen distintas historias de usuario (**HU**)  que describen las necesidades de los usuarios, buscando cubrirlas a partir de los criterios de terminado (**CT**) que se desarrollan en cada una de ellas.
 
-* La lógica del proyecto debe estar implementada completamente en JavaScript, HTML y CSS.
-* Está permitido usar librerías o frameworks tanto de CSS como de JS, pero no es
-  obligatorio. Elige bien las batallas que quieres luchar.
-* En este proyecto, no contamos con un boilerplate, por lo que deberás definir
-  la estructura de carpetas y archivos que consideres necesaria, puedes guiarte
-  de los proyectos anteriores.
-* Los tests y el setup necesario para ejecutarlos serán hechos enteramente por
-  ti.
-* Guardar la data de los visitantes de forma remota usando [Firebase](https://firebase.google.com/).
-* A nivel de arquitectura:
-  * El uso de Firebase implica que debes trabajar bajo una arquitectura
-    serverless.
-  * Te sugerimos que desacoples el proyecto en componentes y manejo de estados
-    para que trabajes de forma ordenada y facilite la implementación de tus
-    tests. Revisa la [charla](https://www.youtube.com/watch?v=g_BxnUJTUSk) y
-    el [blog post](https://medium.com/laboratoria-developers/arquitectura-de-interfaces-web-parte-1-a41053c2a1f2)
-    de Lupo sobre este tema ;)
+**1) COMO** visitante del edificio **QUIERO** poder registrar mi ingreso, **PARA** poder controlar mi estadía en el lugar.
 
-### 3. Tiempo
+**2) COMO** administrador **QUIERO** registrar los usuarios del coworking que trabajan en el edificio, **PARA** que el registro de quienes reciban visitas sea más rápido y expedito.
 
-Tendrán 3 días para trabajar en este proyecto.
+**3) COMO** administrador **QUIERO** visualizar a los visitantes, **PARA** para acceder a su registro de manera más sencilla.
 
-## Avances esperados
+**4) COMO** administrador **QUIERO** visualizar los horarios más frecuentes de visita, **PARA** ver si es necesario contar con más equipos para registrar a los visitantes.
 
-Los criterios mínimos de aceptación para considerar que has completado este
-proyecto son:
+Los criterios de terminado para estas HU son:
 
-### Diseño
+- Realizar test de usabilidad
+- Realizar Test unitarios
+- Etiquetar cada historia terminada con git-tag
+- Se debe acceder a la aplicación desde una tablet (debe ser responsivo)
 
-1. Haber realizado y documentado al menos 2 entrevistas con usuarios diferentes.
+## Prototipo de Baja Fidelidad
 
-### Implementación
+Una vez reconocido el usuario, comienza el proceso creativo de prototipado de baja fidelidad, el cual fue realizado en [figma](https://www.figma.com/file/dzD14n5Y14JQSQThrLx3UStC/Visitors?node-id=0%3A1); destacando las principales vistas:
 
-Tu producto final debe estar desplegado en la web y, como mínimo, debe:
+- Registro de visitantes.
+- Registro de empleados.
+- Historial de visitantes.
 
-1. Permitir al usuario visitante registrarse con sus datos personales,
-   incluyendo su foto.
-2. Permitir al usuario visitante seleccionar a la persona a quien viene a
-   visitar.
-3. Permitir a la administradora agregar un horario de salida.
-4. Permitir a la administradora agregar nuevo usuarios del coworking.
-5. A la administradora le interesa tener un dashboard de "analíticas" de los
-  visitantes: # de visitantes por día, horarios frecuentes de visita, a quién
-  vienen a visitar, etc.
-6. Permitir al usuario administrador visualizar la data de los visitantes,
-   incluyendo la fecha y hora de registro de cada uno
+### Consideraciones en el desarrollo 🛠️
 
-### Presentación
+**Ejecución del interfaz de usuario HTML, CSS, JS**
 
-Las reglas para la presentación son:
+* La lógica del proyecto fue implementada usando JS, HTML y CSS, usando como framework de estilos [Bootstrap](https://getbootstrap.com/) 
 
-1. Tendrás 3 minutos de presentación, ni un segundo más.
-2. Habrán 2 minutos para preguntas.
-3. Te recomendamos que la mayoría del tiempo lo enfoque en demostrar cómo se
-   utiliza tu producto, el cual debe estar desplegado en la web.
-   * No se permite presentar cosas en tu local ni videos previamente grabados.
-   * No utilices slides de powerpoint, enfócate en presentar tu demo.
-   * Durante el demo, enfócate en narrar y explicar el valor que tu producto le
-     brinda al usuario.
-   * Cuida tu lenguaje no verbal; recuerda mirar al público y tener un tono de
-     voz adecuado para que toda la audiencia te pueda escuchar.
+**Implementación de la interfaz**
 
-## Hacker edition
+* Se usó [firebase](https://firebase.google.com/?gclid=Cj0KCQjw7sDlBRC9ARIsAD-pDFo4o3bi6laUeK0Hppr0Y6-QeRkx5bdtpUH2uak61pvLXOcA5KeLDSQaAkV2EALw_wcB)
+como plataforma de desarrollo.
+* Creación de distintas vistas, gestionadas por un archivo (router.js) que permite su visualización, dependiendo de las elecciones del usuario.
+* Desarrollo de funciones para que el visitante pueda registrar su visita utilizando la base de datos [cloud firestore](https://firebase.google.com/docs/firestore/?hl=es-419).
+* Guardar fotografia del visitante, usando [cloud storage](https://firebase.google.com/docs/storage/?hl=es-419).
+* Desarroolo de funciones para que el administrador pueda registrar a empleados que trabajen en el edificio.
+* Desarrollo de funciones para que el administrador pueda acceder a la ficha de los visitantes registrados.
+* Implementación de validaciones; como es el caso de campos vacíos, formato de correo electrónico y formato de número de celular. Todo esto testeado en el archivo auth.spec.js.
+* Manejo de estilos CSS pensado en mobile first; usando bootstrap.
+* Testeos de usabilidad y code review por cada historia de usuario finalizada.
+* Trabajo colaborativo mediante el uso de Git y GitHub :octocat:, realizando realeses por cada historia de usuario terminada. 
+* Deploy con gh-pages de la aplicación [PaseNoma'](https://fabytapia.github.io/SCL008-visitors/)
+* Deploy con firebase de la aplicación [PaseNoma'](https://visitors-hackathon.firebaseapp.com/)
 
-Features/características extra sugeridas:
+**Implementación de vistas**
 
-* Como el WiFi a veces es nuestro peor enemigo, ¿es posible que tu aplicación
-  pueda, sin Internet, registrar los datos del visitante, guardar los datos
-  localmente y cuando tenga Internet mandarlos a la base de datos? Si te animas
-  a hacer esto dale una revisada a los siguientes recursos:
-  * [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
-  * [Offline first manifesto](http://offlinefirst.org/)
-* También sería ideal poder registrar la firma del visitante en el registro.
-* Sería genial también permitir generar un "pase" para el visitante, así
-  fácilmente a la vista se sabe quién está de visita.
+* *templateSession:* vista que permite al usuario acceder a la opción de visitante y administrador.
 
+* *templateVisitorRegistration*: vista que permite al visitante realizar el registro. No puede existir campos vacíos y respetar el formato para correo electrónico y celular. Además, permite tomar una fotografía la que se puede guardar en firebase storage.
 
-## Anexo: Construyendo un MVP
+* *templateAdminOptions*: vista que permite al administrador elegir la vista que desea desplegar.
 
-Una modelo mental común para representar el desarrollo de productos es
-visualizarlo como una pirámide: el producto que construyes consiste en una serie
-de funcionalidades que le dan beneficios al usuario, los cuales le generan
-valor. El detalles está en que no todas las funcionalidades que creas le agregan
-la misma cantidad de valor al usuario. Es más, muchas funcionalidades le agregan
-cero valor. Son cosas que creemos que generan valor, pero que no terminan
-haciéndolo (recuerda que vivimos en un mundo incierto, donde no podemos
-predecir). Por lo tanto, al definir tu producto mínimo viable (MVP), tu misión
-es crear las mínimas funcionalidades que maximicen el valor que entregas. Menos
-es más ;)
+* *templateNewCoworker*: vista que permite al administrador ingresar a un empleado del lugar, identificando su empresa. No puede existir campos vacíos y respetar el formato para correo electrónico y celular.
 
-![Construyendo un MVP](https://lh5.googleusercontent.com/Y0pAAgnYJcYs0DCK2vo28H0709vIJ4OvMkGs5P1xCS4_6k3XQS0jqOA3KQLKsFX1SrCcOqab9jMwuTCRZVATELmlhFr5VihRIrftA5Fj8q0PFQ8JDoktKfHTrZX5CG4ASzv7vyxL)
+* *templateVisitorRecord*: vista que permite al adminitrador las fichas de los visitantes.
+
+**Implementación de funciones**💻
+
+Las principales funciones de [PaseNoma'](https://fabytapia.github.io/SCL008-visitors/) se encuentran desarrolladas en el archivo *datamodel.js*.
+
+* *visitorCreate(visitorFirstName, visitorLastName, visitorEmail, visitorPhone, companyName, companyPerson, companyPersonId, photo)*, necesaria para registrar un visitante.
+
+* coworkerCreate(coworkerFirstName, coworkerLastName, coworkerEmail, coworkerPhone, coworkerCompany)*, necesaria para registrar un empleado.
+
+* *postVisitor*, permite leer desde firebase los datos del visitante y mostrarlos en una vista.
+
+**Aspectos técnicos**
+
+* Se realizó test para comprobar el funcionamiento de la aplicación, logrando los siguientes resultados: 
+
+  - % Statements: 100; % Branch: 100; % Functions: 100; % Lines: 100
+  ![coverage](https://i.postimg.cc/j2kdGfwb/Whats-App-Image-2019-04-12-at-14-35-47.jpg)   
+
+### Futuras mejoras ⌨️
+
+* Implementar la opción de obtener estadísticas.
+
+### Autoras 📌
+
+* 
+* Fabiola Orellana 
+* Fabiola Tapia
+
+8° Generación de Laboratoria.
+
+Mayo, 2019.
