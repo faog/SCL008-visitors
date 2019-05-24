@@ -119,7 +119,8 @@ export const templateVisitorRegistration = () =>{
             width: 320, height: 200
             }
         };
-        navigator.mediaDevices.getUserMedia(constraints).then((stream)=>{ //abrir la camara
+
+        navigator.mediaDevices.getUserMedia(constraints).then((stream)=>{ //abrir la camara, usando el metodo getUserMedia de la API MediaDevices 
             window.stream = stream;
             video.srcObject = stream; //toma la data de la camara y lo conecta con el elemento video
             document.getElementById("takephoto").addEventListener('click',()=>{

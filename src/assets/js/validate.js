@@ -14,16 +14,8 @@ export const validateNew = (coworkerFirstName, coworkerLastName, coworkerEmail, 
         } else {
             return true;
         }
-    }
-    /*
-    export const validateInput = (fullName, email, visitCompany, whoVisit) => {
-        if (fullName === "" || email === "" || visitCompany === "" || whoVisit === "") {
-            return false;
-        } else {
-            return true;
-        }
-    };
-    */
+}
+
 export const validateEmail = (email) => {
     //expresión regular que simula el patrón del correo electrónico
     let pattern = /\S+@\S+\.\S+/;
@@ -36,11 +28,3 @@ export const validatePhone = (phone) => {
     return pattern.test(phone);
 };
 
-export const validateNewCoworker = (coWorkerFirstName, coWorkerLastName, coWorkerPhone) => {
-    if (coWorkerFirstName === "" || coWorkerLastName === "" || coWorkerEmail === "" || !validateEmail(coWorkerEmail ||
-            visitorPhone === "" || !validatePhone(coWorkerPhone) || coWorkerPhone.length < 9 || coWorkerPhone.length > 9)) {
-        return false;
-    } else {
-        return true;
-    }
-};
