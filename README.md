@@ -14,9 +14,9 @@ La planificación fue realizada en trello, la cual puedes revisar [aquí](https:
 
 Lo primero y esencial es conocer al usuario. Para ello se realizó una [entrevista](https://photos.app.goo.gl/poKEZtnMBKzwXvUJ8) en la que se pudo identificar las siguientes respuestas:
 
-- seria ideal tener una base de datos de todas las empresas,y encargados de recibir las visitas 
+- Seria ideal tener una base de datos de todas las empresas,y encargados de recibir las visitas 
 
-- si bien entre mas rápido sea la recepción de visitas mejor es el flujo, por lo que seria mas dinámico.
+- Si bien entre mas rápido sea la recepción de visitas mejor es el flujo, por lo que seria mas dinámico.
 
 - Uno de los principales problemas fue que no llevan control de salida de las visitas, por lo que si hacen mejoras digitales de recepción seria un buen punto para solucionar. 
 
