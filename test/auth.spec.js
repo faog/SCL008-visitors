@@ -1,4 +1,4 @@
-import { validateEmail, validateNewCoworker, validateRegistration } from "./../src/assets/js/validate.js";
+import { validateEmail, validateNew, validateRegistration, validatePhone } from "./../src/assets/js/validate.js";
 
 /*1) Validaciones para validateRegistration()*/
 describe("validateRegistration", () => {
@@ -24,10 +24,21 @@ describe('validateEmail', () => {
         expect(validateEmail('ftapiamorales@gmail.com')).not.toBe(false);
     });
 });
-/*1) Validaciones para validateNewCoworker*/
 
-describe('validateNewCoworker', () => {
+/*2 Validaciones para validateNewCoworker*/
+describe('validateNew', () => {
     it('deberia retornar false, si los campos no estan completados', () => {
-        expect(validateNewCoworker("", "", "", "")).toBe(false);
-    });
+        expect(validateNew("", "", "", "")).toBe(false);
+    });  
+
+    it('deberia retornar true, si el usuario ingresa todos los campos', () => {
+        expect(validateNew("Fabiola", "Orellana", "fabiola.orellana.g@gmail.com", "123456789"))
+        .toBe(true);
+    });  
 });
+
+describe('validatePhone',() => {
+    it('deberia retornar false, si el celular no es un número', () => {
+        expect(validatePhone("GHdd")).toBe(false);
+    }); 
+})
